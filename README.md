@@ -172,5 +172,5 @@ Developed by **Nelson C., Ryan C., and Ethan S.** as a control panel for the Leb
 ---
 
 ## Contact
-For questions or support, reach out at [ncampos@wm.edu].
+For questions or support, reach out at [rhcody@wm.edu].
 

@@ -33,6 +33,28 @@ Before installing and running the program, ensure the following:
 
 ---
 
+## System Schematic
+The control panel software was developed as part of a larger hardware project. The complete electrical design was created in Multisim.
+
+To clarify the scope of this repository, the schematic below has been annotated to highlight the two main functional blocks: the **control interface (Raspberry Pi)** and the **actuator/display circuit (motor and LCD)**. The un-highlighted components were part of the larger assembly and are not controlled by this software.
+
+![Annotated schematic showing the Pi interface and Motor/Display circuits]<img width="798" alt="Screenshot 2025-06-15 at 2 39 54 PM" src="https://github.com/user-attachments/assets/2210a822-e4cc-4482-911c-7b3857c542d7" />
+
+
+### Key Subsystems:
+
+*   **Blue Highlight (Control Interface):**
+    *   This section shows the **Raspberry Pi GPIO pins** that serve as the software's connection to the physical world.
+    *   Digital signals from these pins (e.g., `GPIO17`, `GPIO27`) are used to command the motor driver.
+    *   The `GPIO2_SDA` and `GPIO3_SCL` pins provide the I2C data and clock lines for the display.
+
+*   **Green Highlight (Actuator & Display Circuit):**
+    *   This section contains the "business end" of the project—the components that the software directly controls to perform an action.
+    *   It includes the `Main_Stepper` motor, its driver ICs, and the `Digital_Display_Board`.
+    *   *(Note: While the schematic specifies UCC27424D drivers, the physical build used a standard DRV8833 module. The control principle of driving the motor via GPIO signals is identical.)*
+
+---
+
 ## Installation
 
 ### Step 1: Update Raspberry Pi
@@ -63,14 +85,14 @@ sudo apt-get install i2c-tools
 ### Step 4a: Clone the Repository
 Clone the project repository to your Raspberry Pi:
 ```bash
-git clone https://github.com/nelscamp/SI_Final_LeWindmill.git
-cd SI_Final_LeWindmill
+git clone https://github.com/RYCO123/LeWindmill_Final.git
+cd LeWindmill_Final
 ```
 
 ### OR ###
 
 ### Step 4b: Download Files Manually
-- Install all files from https://github.com/nelscamp/SI_Final_LeWindmill.git into a folder.
+- Install all files from https://github.com/RYCO123/LeWindmill_Final.git into a folder.
 - Access folder in terminal:
 ```bash
 cd C:/path/to/folder

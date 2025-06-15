@@ -1,0 +1,3 @@
+customtkinter
+RPi.GPIO
+RPLCD

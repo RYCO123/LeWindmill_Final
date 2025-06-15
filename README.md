@@ -1,5 +1,6 @@
 # Windmill Control Panel
-![image](https://github.com/user-attachments/assets/8f84e91e-aba8-421e-a36f-c573de80fd95)
+
+<img width="550" alt="Screenshot 2025-06-15 at 2 20 07 PM" src="https://github.com/user-attachments/assets/bfc1179b-0b65-464d-88f0-27ea86f34111" />
 
 ## Overview
 The **Windmill Control Panel** is a Python-based application for managing the operation of a motorized windmill and music box. It provides a graphical user interface (GUI) to adjust motor speed, change direction, and monitor real-time status using a Raspberry Pi. The application also supports a LCD display for visual feedback.
